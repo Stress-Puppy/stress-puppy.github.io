@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e14">
+  <meta name="description" content="Britney (Jingyi Song) is a PhD student at the University of Sydney, working in databases, big data, and graph theory.">
+  <title>Britney (Jingyi Song) — Databases, Graphs & Time</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23080e14'/%3E%3Cpath d='M18 20L46 22L32 46Z' stroke='%235ee7c1' stroke-width='3' fill='none'/%3E%3Cg fill='%235ee7c1'%3E%3Ccircle cx='18' cy='20' r='5'/%3E%3Ccircle cx='46' cy='22' r='5'/%3E%3Ccircle cx='32' cy='46' r='5'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=heading-period-1">
+  <script src="app.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Jingyi Song, home"><span class="monogram" aria-hidden="true">js<span>_</span></span><span>Jingyi Song</span></a>
+    <nav aria-label="Main navigation"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#background">Background</a><a class="nav-contact" href="#contact">Get in touch</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="bracket">[</span> DATABASES · GRAPHS · TIME <span class="bracket">]</span></div>
+        <p class="name-preface">Hi, I am</p>
+        <h1 id="hero-title">JINGYI<br> <span>SONG<span class="name-period">.</span></span></h1>
+        <p class="name-intro">You can also call me <span class="name-badge">Britney</span> or <span class="name-badge">STRESS PUPPY</span></p>
+        <p class="hero-statement">Finding structure.<br>Understanding <em>connections.</em></p>
+        <p class="hero-bio">I’m a PhD student at the University of Sydney. My research spans databases, big data, and graph theory, with work on historical connectivity in temporal graphs.</p>
+        <p class="name-greeting">Nice to meet you!</p>
+        <div class="hero-actions"><a class="button primary" href="#publications">Explore my research</a><a class="text-link" href="mailto:jingyi.song@unswalumni.com">Let’s connect</a></div>
+        <div class="affiliation"><span class="affiliation-rule" aria-hidden="true"></span><div>UNIVERSITY OF SYDNEY<span>PhD student · Computer Science</span></div><div class="location">Sydney, Australia</div></div>
+      </div>
+      <div class="graph-panel" aria-label="Interactive temporal graph demonstration">
+        <div class="graph-header"><span class="mono">G = (V, E, t)</span><span class="graph-badge">TEMPORAL GRAPH</span></div>
+        <div class="graph-stage">
+          <div class="graph-grid" aria-hidden="true"></div>
+          <svg id="temporal-graph" viewBox="0 0 600 420" role="group" aria-label="Example temporal graph. Select a vertex to inspect its connected component.">
+            <defs><filter id="node-glow" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="5"/></filter></defs>
+            <g id="graph-edges"></g><g id="graph-nodes"></g>
+          </svg>
+          <div class="graph-note"><span class="graph-note-kicker">CONNECTED COMPONENT</span><span id="node-summary">Vertex A · 5 connected vertices</span></div>
+        </div>
+        <div class="graph-control">
+          <div class="window-heading"><label for="time-window">Explore a time window</label><output id="window-label" for="time-window">[4, 6]</output></div>
+          <div class="slider-row"><span class="mono">t</span><input id="time-window" type="range" min="3" max="9" value="6" step="1" aria-label="Time window end; start is two time units earlier"><button id="play-timeline" class="play-button" type="button" aria-label="Play timeline" aria-pressed="false"><span aria-hidden="true">▷</span></button></div>
+          <div class="graph-legend"><span><i class="legend-line active"></i>In this window</span><span><i class="legend-line"></i>Outside window</span><span class="graph-hint">Select any node</span></div>
+        </div>
+        <p class="graph-footnote">An illustrative graph. Connectivity is evaluated in the selected window’s projected graph.</p>
+      </div>
+    </section>
+    <div class="topic-band section-shell" aria-label="Research areas"><span>01 / RESEARCH INTERESTS</span><p>Database systems <i>/</i> Temporal graphs <i>/</i> Graph algorithms</p></div>
+    <section class="content-section section-shell" id="research" aria-labelledby="research-heading">
+      <div class="section-heading"><span class="section-index">01 — RESEARCH</span><h2 id="research-heading">Data changes.<br><span>The questions evolve.</span></h2></div>
+      <div class="research-intro"><p>How can we answer questions about connections as a graph changes over time?</p><p class="muted">I’m interested in the intersection of data management and graph theory: how we represent changing relationships, build useful indexes, and query historical structure.</p></div>
+      <div class="research-cards">
+        <article class="research-card"><div class="research-card-top"><span class="mono">01 / TEMPORAL</span><svg class="research-icon" viewBox="0 0 96 70" aria-hidden="true"><path d="M12 18H82M12 36H82M12 54H82"/><path class="accent" d="M31 9V63M65 9V63"/><circle cx="31" cy="18" r="3"/><circle cx="46" cy="36" r="3"/><circle cx="65" cy="54" r="3"/></svg></div><h3>Graphs over time</h3><p>Representing relationships as timestamped edges, and looking back at the structure within a historical time window.</p><span class="research-tag">Temporal data · Historical structure</span></article>
+        <article class="research-card"><div class="research-card-top"><span class="mono">02 / CONNECTIVITY</span><svg class="research-icon" viewBox="0 0 96 70" aria-hidden="true"><path class="accent" d="M12 48L37 19L63 43L83 17"/><circle cx="12" cy="48" r="4"/><circle cx="37" cy="19" r="4"/><circle cx="63" cy="43" r="4"/><circle cx="83" cy="17" r="4"/></svg></div><h3>Connections that matter</h3><p>Determining whether two vertices are connected in a window’s projected graph, as new edges continue to arrive.</p><span class="research-tag">Graph queries · Connected components</span></article>
+        <article class="research-card"><div class="research-card-top"><span class="mono">03 / INDEXING</span><svg class="research-icon" viewBox="0 0 96 70" aria-hidden="true"><path d="M48 14V29H22V50M48 29H75V50"/><rect class="accent" x="36" y="7" width="24" height="14" rx="2"/><rect x="10" y="49" width="24" height="14" rx="2"/><rect x="63" y="49" width="24" height="14" rx="2"/></svg></div><h3>Structure for efficiency</h3><p>Designing graph indexes and update algorithms that support historical and sliding-window connectivity queries.</p><span class="research-tag">Forest-based indexes · Query processing</span></article>
+      </div>
+    </section>
+    <section class="content-section section-shell" id="publications" aria-labelledby="publications-heading">
+      <div class="section-heading inline"><div><span class="section-index">02 — SELECTED PUBLICATION</span><h2 id="publications-heading">A window into my work.</h2></div><span class="publication-count mono">01 PAPER</span></div>
+      <article class="paper-card"><div class="paper-visual" aria-hidden="true"><span class="paper-venue">SIGMOD<br><b>2024</b></span><div class="mini-graph"><svg viewBox="0 0 260 140"><path d="M25 95L75 38L125 75L181 30L234 87M75 38L80 113L125 75L180 118L234 87"/><g><circle cx="25" cy="95" r="5"/><circle cx="75" cy="38" r="6"/><circle cx="125" cy="75" r="7"/><circle cx="181" cy="30" r="5"/><circle cx="234" cy="87" r="6"/><circle cx="80" cy="113" r="5"/><circle cx="180" cy="118" r="5"/></g></svg></div><span class="mono paper-number">HISTORICAL CONNECTIVITY</span></div><div class="paper-copy"><div class="paper-meta"><span class="pill">SIGMOD 2024</span><span>Proc. ACM Manag. Data · 2(3), Article 157</span></div><h3>On Querying Historical Connectivity in Temporal Graphs</h3><p class="authors"><strong>Jingyi Song</strong>, Dong Wen, Lantian Xu, Lu Qin, Wenjie Zhang, Xuemin Lin</p><p class="paper-summary">Given a time window and two vertices, are they connected in the graph formed by that window’s edges? This work develops a forest-based index for efficient historical and sliding-window connectivity queries.</p><div class="paper-actions"><a class="button secondary" href="https://doi.org/10.1145/3654960" target="_blank" rel="noopener noreferrer">Read paper <span class="sr-only">(opens in a new tab)</span></a><button class="text-link" type="button" id="citation-open">Cite this work</button></div></div></article>
+    </section>
+    <section class="content-section section-shell" id="background" aria-labelledby="background-heading">
+      <div class="section-heading"><span class="section-index">03 — BACKGROUND</span><h2 id="background-heading">Research. Teaching.<br><span>Building.</span></h2></div>
+      <div class="background-grid">
+        <div class="education-column"><h3 class="column-heading">Education <span class="mono">/ 01</span></h3>
+          <ol class="timeline">
+            <li class="current"><div class="timeline-date"><time datetime="2026-08">AUG 2026</time> — PRESENT</div><h4>University of Sydney</h4><p>PhD in Computer Science</p><p class="timeline-note">Database, Big Data & Graph Theory</p></li>
+            <li><div class="timeline-date">SEP 2022 — SEP 2024</div><h4>UNSW Sydney</h4><p>Master of Philosophy in Computer Science</p><p class="timeline-note">Database</p></li>
+            <li><div class="timeline-date">SEP 2020 — SEP 2022</div><h4>UNSW Sydney</h4><p>Bachelor of Science in Computer Science</p></li>
+            <li><div class="timeline-date">AUG 2018 — SEP 2020</div><h4>Wenzhou-Kean University</h4><p>Undergraduate studies</p><p class="timeline-note">Exchange at Kean University, USA · 2020</p></li>
+          </ol>
+        </div>
+        <div class="teaching-column"><h3 class="column-heading">Teaching at UNSW <span class="mono">/ 02</span></h3>
+          <article class="teaching-entry"><div class="teaching-top"><span class="course-code">COMP9311</span><span class="pill">CURRENT</span></div><h4>Database Systems</h4><p>Tutor · Aug 2026 – present</p><p class="teaching-note">Previously taught Feb – May 2023.</p></article>
+          <article class="teaching-entry"><div class="teaching-top"><span class="course-code">ZZEN9313</span></div><h4>Big Data Management</h4><p>Tutor · Oct – Dec 2023</p></article>
+          <div class="honors"><span class="mono">ACADEMIC HONORS</span><p>Dean’s Honours List · UNSW, 2021<br>Dean’s List · Kean University, 2020<br>Dean’s List · WKU, 2019</p></div>
+        </div>
+      </div>
+      <details class="experience"><summary><span>Beyond research<span class="summary-caption">Selected industry & engineering experience</span></span><span class="expand-icon" aria-hidden="true">+</span></summary><div class="experience-grid"><article><span class="timeline-date">JUN 2025 — MAY 2026</span><h4>China Unicom</h4><p>Solutions Manager</p></article><article><span class="timeline-date">NOV 2021 — FEB 2022</span><h4>Advanced Institute of Information Technology, Peking University</h4><p>Python Back-end Intern Developer</p><p class="experience-detail">Database readers, search, and data pipelines.</p></article><article><span class="timeline-date">AUG 2021 — NOV 2021</span><h4>Brilliant Manufacturing (Wuxi)</h4><p>Front-end Intern Developer</p><p class="experience-detail">Order data interfaces and web applications.</p></article></div></details>
+    </section>
+    <section class="contact-section section-shell" id="contact" aria-labelledby="contact-heading"><span class="section-index">04 — CONTACT</span><div class="contact-grid"><h2 id="contact-heading">Good research starts<br>with a <em>connection.</em></h2><div><p>For research conversations, academic collaboration, or questions about my work.</p><a class="contact-email" href="mailto:jingyi.song@unswalumni.com">jingyi.song@unswalumni.com</a><div class="contact-links"><a href="https://orcid.org/0009-0001-3821-8406" target="_blank" rel="noopener noreferrer">ORCID <span class="sr-only">(opens in a new tab)</span></a><a href="https://doi.org/10.1145/3654960" target="_blank" rel="noopener noreferrer">ACM publication <span class="sr-only">(opens in a new tab)</span></a></div></div></div></section>
+  </main>
+  <footer class="site-footer section-shell"><span>© <span id="year">2026</span> Jingyi Song</span><span class="footer-center mono">DATA. STRUCTURE. CONNECTION.</span><a href="#top">Back to top</a></footer>
+  <dialog id="citation-dialog" aria-labelledby="citation-title"><div class="dialog-heading"><h2 id="citation-title">Cite this work</h2><button id="citation-close" type="button" aria-label="Close citation">×</button></div><p class="muted">BibTeX · SIGMOD 2024</p><pre id="bibtex">@article{Song2024HistoricalConnectivity,
+  author = {Song, Jingyi and Wen, Dong and Xu, Lantian and Qin, Lu and Zhang, Wenjie and Lin, Xuemin},
+  title = {On Querying Historical Connectivity in Temporal Graphs},
+  journal = {Proceedings of the ACM on Management of Data},
+  year = {2024},
+  volume = {2},
+  number = {3},
+  articleno = {157},
+  numpages = {25},
+  doi = {10.1145/3654960}
+}</pre><div class="citation-actions"><button class="button primary" id="copy-citation" type="button">Copy BibTeX</button><a class="text-link" href="publication.bib" download>Download .bib</a></div><p id="copy-status" role="status"></p></dialog>
+</body>
+</html>
